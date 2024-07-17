@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge AluraGeek</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="./assets/alura.png" alt="Logo de AluraGeek">
+    </header>
+
+    <main>
+        <section class="products">
+            <h1>Mis Productos</h1>
+            <div class="product-list">
+                <!-- Aquí se renderizarán dinámicamente los productos -->
+            </div>
+            <p class="no-products">No se han agregado productos.</p>
+        </section>
+
+        <section class="add-product">
+            <h1>Agregar Producto</h1>
+            <form id="addProductForm">
+                <input type="text" name="name" placeholder="Nombre del producto" required>
+                <input type="number" name="price" placeholder="Precio del producto" step="0.01" required>
+                <input type="file" name="image" accept="image/*" required>
+                <div class="form-buttons">
+                    <button type="submit">Agregar Producto</button>
+                    <button type="button" onclick="clearForm()">Limpiar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <img src="./assets/alura.png" alt="Logo de AluraGeek">
+        <p>Desarrollado por [Tu Nombre]</p>
+        <p>&copy; 2024 AluraGeek</p>
+    </footer>
+
+    <script type="module" src="./js/api.js"></script>
+    <script type="module" src="./js/formHandler.js"></script>
+    <script type="module" src="./js/main.js"></script>
+
+</body>
+</html>
